@@ -8,7 +8,7 @@ function M = redging(A)
 		KStroka = AK(k,1:k-1); % Крайняя Строка 
 		KStolbec = AK(1:k-1,k); % Крайний Столбец 
 		akk = AK(k,k); % Крайний элемент
-		%Формулы метода окаймления
+		% Формулы метода окаймления
 		a = 1 / (akk - KStroka * M * KStolbec);
 		r = (-a) * (M * KStolbec); 
 		q = (-a) * KStroka * M; 
